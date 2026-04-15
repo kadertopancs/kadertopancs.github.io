@@ -1,4 +1,4 @@
-# Kader Topan – QA / SDET Portfolio
+# Kader Topan – QA / Software Test Automation Engineer Portfolio
 
 This repository contains my personal portfolio website, designed to present my skills and experience in Software Testing and Test Automation.
 
