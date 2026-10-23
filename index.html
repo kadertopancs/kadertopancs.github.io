@@ -1,143 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KADER TOPAN | Software Test Automation Engineer | SDET</title>
- 
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kader Topan — Software Engineer focused on Java, SQL, and practical software solutions.">
+  <title>Kader Topan | Software Engineer · Java · SQL</title>
   <style>
-    * { margin:0; padding:0; box-sizing:border-box; }
-
+    :root {
+      color-scheme: dark;
+      --bg: #0b1020;
+      --panel: #111a2e;
+      --text: #edf2ff;
+      --muted: #a9b5cc;
+      --accent: #8ab4ff;
+      --line: rgba(169,181,204,.18);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
-      font-family: Arial, sans-serif;
-      background:#0f172a;
-      color:#e2e8f0;
-      line-height:1.6;
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(ellipse at top right, #17294a 0, var(--bg) 48%);
+      color: var(--text);
+      line-height: 1.65;
     }
-
-    .container {
-      max-width:1000px;
-      margin:auto;
-      padding:40px 20px;
-    }
-
-    .hero {
-      text-align:center;
-      margin-bottom:40px;
-    }
-
-    .hero h1 {
-      font-size:48px;
-      color:#ffffff;
-    }
-
-    .hero h2 {
-      margin-top:10px;
-      font-size:22px;
-      color:#38bdf8;
-    }
-
-    .hero p {
-      margin-top:12px;
-      color:#94a3b8;
-    }
-
-    .section {
-      margin-top:30px;
-    }
-
-    .section h2 {
-      color:white;
-      margin-bottom:15px;
-    }
-
-    .card {
-      background:#1e293b;
-      padding:20px;
-      border-radius:12px;
-      margin-top:15px;
-      transition:0.3s;
-    }
-
-    .card:hover {
-      transform:translateY(-5px);
-    }
-
-    a {
-      color:#38bdf8;
-      text-decoration:none;
-      font-weight:bold;
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(980px, calc(100% - 40px)); margin: 0 auto; }
+    header { padding: 24px 0; border-bottom: 1px solid var(--line); }
+    nav { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { font-weight: 750; letter-spacing: -.03em; color: var(--text); }
+    .navlinks { display: flex; flex-wrap: wrap; gap: 20px; font-size: .94rem; }
+    .navlinks a { color: var(--muted); }
+    .hero { padding: 100px 0 76px; }
+    .eyebrow { color: var(--accent); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; font-size: .78rem; }
+    h1 { font-size: clamp(2.5rem, 7vw, 4.8rem); line-height: 1.08; letter-spacing: -.055em; margin: 14px 0 18px; }
+    h1 span { color: var(--accent); }
+    .lead { max-width: 690px; color: var(--muted); font-size: 1.12rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .button { display: inline-block; border: 1px solid var(--line); padding: 10px 16px; border-radius: 10px; font-weight: 650; }
+    .button.primary { color: #081226; background: var(--accent); border-color: var(--accent); }
+    section { padding: 28px 0 48px; }
+    h2 { font-size: 1.55rem; letter-spacing: -.025em; margin: 0 0 20px; }
+    .section-intro { color: var(--muted); max-width: 720px; margin-top: -8px; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .card { background: rgba(17,26,46,.82); border: 1px solid var(--line); border-radius: 16px; padding: 22px; }
+    .card h3 { margin: 0 0 8px; font-size: 1.05rem; }
+    .card p { color: var(--muted); margin: 0; }
+    .tags { display: flex; flex-wrap: wrap; gap: 9px; padding: 0; list-style: none; }
+    .tags li { background: rgba(138,180,255,.09); border: 1px solid rgba(138,180,255,.2); border-radius: 999px; padding: 6px 12px; font-size: .9rem; }
+    .education { border-left: 2px solid var(--accent); padding: 2px 0 2px 18px; }
+    .education p { color: var(--muted); margin: 5px 0; }
+    footer { border-top: 1px solid var(--line); padding: 24px 0 36px; color: var(--muted); font-size: .9rem; }
+    @media (max-width: 640px) {
+      .hero { padding: 72px 0 50px; }
+      nav { align-items: flex-start; flex-direction: column; }
+      .grid { grid-template-columns: 1fr; }
+      .wrap { width: min(100% - 32px, 980px); }
     }
   </style>
 </head>
-
 <body>
-
-<div class="container">
-
-  <!-- HERO -->
-  <div class="hero">
-    <h1>KADER TOPAN</h1>
-    <h2>QA | Software Test Automation Engineer</h2>
-    <p> Focused on building scalable, reliable, and high-quality software solutions.</p>
-  </div>
-
-  <!-- ABOUT -->
-  <div class="section">
-    <h2>About Me</h2>
-    <div class="card">
-      <p>
-        I have over 5 years of experience in data analysis, business analysis, and operational reporting.
-        I have worked with SQL, Excel, and reporting tools to support data-driven decision-making processes.
-      </p>
-      <p>
-        Currently, I am focusing on Software Test Automation (SDET), improving my Java skills and building real-world testing projects.
-        My goal is to work as a Software Test Automation Engineer (SDET) in an international company.
-      </p>
+  <header>
+    <div class="wrap">
+      <nav aria-label="Main navigation">
+        <a class="brand" href="#home">Kader Topan</a>
+        <div class="navlinks">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <!-- SKILLS -->
-  <div class="card">
-  Java | Selenium WebDriver | TestNG | Cucumber | Postman | REST API Testing | MySQL | SQL | Git | GitHub | Jenkins | JIRA | Agile/Scrum
-</div>
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap">
+        <div class="eyebrow">Software Engineer · Java · SQL</div>
+        <h1>Hi, I'm Kader.<br><span>I build practical solutions.</span></h1>
+        <p class="lead">Software Engineer with an MSc in Software Engineering, focused on Java development, SQL, and database technologies. My background also includes data analysis, operational reporting, and IT systems.</p>
+        <div class="actions">
+          <a class="button primary" href="#projects">Explore projects</a>
+          <a class="button" href="https://github.com/kadertopancs" target="_blank" rel="noopener noreferrer">GitHub profile ↗</a>
+          <a class="button" href="mailto:kader.topan.cs@gmail.com">Contact me</a>
+        </div>
+      </div>
+    </section>
 
-  <!-- WORK -->
-  <div class="section">
-    <h2>My Work</h2>
+    <section id="about">
+      <div class="wrap">
+        <h2>About me</h2>
+        <p class="section-intro">I combine a software engineering education with hands-on experience in operational data and information systems. I enjoy analytical problem-solving and applying technology to real-world workflows.</p>
+      </div>
+    </section>
 
-    <div class="card">
-      <h3>Java Core Practice</h3>
-      <p>
-        I follow a structured weekly learning plan to build a strong foundation in Java.
-        I practice core programming concepts such as control flow, arrays, collections, and object-oriented programming.
-        These exercises improve my problem-solving skills and help me write clean and structured code.
-      </p>
-      <a href="https://github.com/kadertopancs/java-core-practice" target="_blank">View Practice</a>
-    </div>
+    <section id="skills">
+      <div class="wrap">
+        <h2>Technical skills</h2>
+        <ul class="tags">
+          <li>Java</li><li>SQL</li><li>MySQL</li><li>Object-Oriented Programming</li>
+          <li>Git</li><li>GitHub</li><li>HTML &amp; CSS</li><li>Selenium WebDriver</li>
+          <li>TestNG</li><li>Data Analysis</li><li>Operational Reporting</li>
+        </ul>
+      </div>
+    </section>
 
-    <div class="card">
-      <h3>SDET Projects</h3>
-      <p>
-I develop test automation projects using Java and modern testing tools.
-These projects focus on real-world scenarios such as validation logic, API testing, and improving software quality through structured and maintainable solutions.
-</p>
-      <a href="https://github.com/kadertopancs/java-course-project"  target="_blank">View Projects</a>
-    </div>
+    <section id="projects">
+      <div class="wrap">
+        <h2>Selected projects</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Java Algorithm &amp; Application Projects</h3>
+            <p>Java practice projects focused on programming fundamentals, algorithms, and problem-solving.</p>
+            <p style="margin-top:16px"><a href="https://github.com/kadertopancs/java-course-project" target="_blank" rel="noopener noreferrer">View repository ↗</a></p>
+          </article>
+          <article class="card">
+            <h3>Port Operations Vehicle &amp; Container Tracking System</h3>
+            <p>A project focused on applying software concepts to vehicle and container tracking in port operations.</p>
+            <p style="margin-top:16px;color:var(--muted);font-size:.9rem">Project overview</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  </div>
+    <section id="education">
+      <div class="wrap">
+        <h2>Education</h2>
+        <div class="education">
+          <strong>MSc in Software Engineering</strong>
+          <p>İzmir Kâtip Çelebi University · GPA: 3.75 / 4.00</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- CONTACT -->
-  <div class="section">
-    <h2>Contact</h2>
-    <div class="card">
-      <p>Email: kader.topan.cs@gmail.com</p>
-      <p><a href="https://github.com/kadertopancs" target="_blank">GitHub Profile</a></p>
-    </div>
-  </div>
+    <section id="contact">
+      <div class="wrap">
+        <h2>Let's connect</h2>
+        <p class="section-intro">For professional opportunities or project discussions, feel free to get in touch.</p>
+        <div class="actions">
+          <a class="button primary" href="mailto:kader.topan.cs@gmail.com">kader.topan.cs@gmail.com</a>
+          <a class="button" href="https://github.com/kadertopancs" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-</div>
-
+  <footer>
+    <div class="wrap">© <span id="year">2026</span> Kader Topan · Built with HTML &amp; CSS.</div>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
